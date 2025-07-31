@@ -1,8 +1,8 @@
 # MacaroonsShop
 
-###This project has been converted to angular
+##This project has been converted to angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.1.
+This project was generated using Angular CLI version 20.1.1.
 
 ## Development server
 
