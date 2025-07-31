@@ -1,0 +1,317 @@
+<header class="header">
+  <div class="container">
+    <div class="burger" #burger (click)="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="22px">
+        <path
+          fill-rule="evenodd"
+          fill="rgb(130, 19, 40)"
+          d="M0.000,-0.000 L39.1000,-0.000 L39.1000,1.1000 L0.000,1.1000 L0.000,-0.000 Z"
+        />
+        <path
+          fill-rule="evenodd"
+          fill="rgb(130, 19, 40)"
+          d="M0.000,10.000 L39.1000,10.000 L39.1000,12.000 L0.000,12.000 L0.000,10.000 Z"
+        />
+        <path
+          fill-rule="evenodd"
+          fill="rgb(130, 19, 40)"
+          d="M0.000,19.1000 L39.1000,19.1000 L39.1000,21.1000 L0.000,21.1000 L0.000,19.1000 Z"
+        />
+      </svg>
+    </div>
+
+    <div class="logo">
+      <img src="images/logo.png" alt="logo" />
+    </div>
+
+    <nav class="menu" #menu [class.open]="isMenuOpen()">
+      <div class="close" (click)="closeMenu()">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 492 492"
+        >
+          <path
+            d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+                        c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+                        c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+                        L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+                        c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+                        c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+                        c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"
+          />
+        </svg>
+      </div>
+      <ul>
+        <li>
+          <a (click)="scrollTo('choose-macaroons')">Пироженки</a>
+        </li>
+        <li>
+          <a (click)="scrollTo('big-macaroons')">О нас</a>
+        </li>
+        <li>
+          <a (click)="scrollTo('order-macaroons')">Оформить заказ</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-phone">{{ phoneNumber | phone }}</div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="main-macaroons">
+    <div class="container">
+      <div class="main-macaroons-left">
+        <h1 class="main-macaroons-title">
+          Мягкие французские пироженки Macaroons
+        </h1>
+        <p class="main-macaroons-description">
+          Побалуйте себя и своих близких самыми вкусными и ароматными домашними
+          пироженками Macaroon!
+        </p>
+        <div class="btn-macaroons-action">
+          <a class="macaroons-action" appButton href="#choose-macaroons">Выбрать макарун</a>
+        </div>
+      </div>
+      <div class="main-macaroons-right">
+        <div class="image">
+          <img src="images/macaroons-main.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="big-macaroons" class="big-macaroons">
+    <div class="container">
+      <div class="big-macaroons-top">
+        <div class="big-macaroons-left">
+          <h2 class="big-macaroons-left-title">
+            Мы печём для вас вкуснейшие макаруны уже более 10 лет
+          </h2>
+          <p class="big-macaroons-left-desc">
+            Все пироженки мы готовим только из натуральных и качественных
+            продуктов, без консервантов, ароматизаторов, красителей. Используем
+            в приготовлении сливочное масло 82,5%, без дрожжей, маргарина,
+            разрыхлителей и улучшителей муки.
+          </p>
+        </div>
+        <div class="big-macaroons-right">
+          <img src="images/macaroons-big.png" alt="Big macaroon" />
+        </div>
+      </div>
+      <div class="big-macaroons-bottom">
+        <div class="big-macaroon-bottom">
+          <div class="big-macaroon-bottom-number">1</div>
+          <div class="big-macaroon-bottom-title">Лучшие продукты</div>
+          <div class="big-macaroon-bottom-description">
+            Мы честно готовим макаруны только из натуральных и качественных
+            продуктов. Мы не используем консерванты, ароматизаторы и красители.
+          </div>
+        </div>
+        <div class="big-macaroon-bottom">
+          <div class="big-macaroon-bottom-number">2</div>
+          <div class="big-macaroon-bottom-title">Много вкусов</div>
+          <div class="big-macaroon-bottom-description">
+            Наша задача – предоставить вам широкое разнобразие вкусов. Вы
+            удивитесь, но у нас более 70 вкусов пироженок.
+          </div>
+        </div>
+        <div class="big-macaroon-bottom">
+          <div class="big-macaroon-bottom-number">3</div>
+          <div class="big-macaroon-bottom-title">Бисквитное тесто</div>
+          <div class="big-macaroon-bottom-description">
+            Все пирожные готовятся на бисквитном тесте с качественным сливочным
+            маслом 82,5%. В составе нет маргарина и дрожжей!
+          </div>
+        </div>
+        <div class="big-macaroon-bottom">
+          <div class="big-macaroon-bottom-number">4</div>
+          <div class="big-macaroon-bottom-title">Честный продукт</div>
+          <div class="big-macaroon-bottom-description">
+            Вкус, качество и безопасность наших пирогов подтверждена декларацией
+            о соответствии, которую мы получили 22.06.2016 г.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="choose-macaroons" class="choose-macaroons" #chooseMacaroons>
+      <div class="container">
+        <h2 class="choose-macaroons-title">Выберите свой макарун</h2>
+        <!-- <div class="choose-macaroon-carts">
+                    <div class="choose-macaroon-cart">
+                        <div class="choose-macaroon-cart-image">
+                            <img src="images/1.png" alt="Macaroon 1">
+                        </div>
+                        <div class="choose-macaroon-title">Макарун с малиной</div>
+                        <div class="choose-macaroon-btn-quant-price">
+                            <div class="choose-macaroon-quant-price">
+                                <div class="choose-macaroon-quantity">1 шт.</div>
+                                <div class="choose-macaroon-price">1,70 руб.</div>
+                            </div>
+                            <button class="macaroons-action btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="choose-macaroon-cart">
+                        <div class="choose-macaroon-cart-image">
+                            <img src="images/2.png" alt="Macaroon 2">
+                        </div>
+                        <div class="choose-macaroon-title">Макарун с манго</div>
+                        <div class="choose-macaroon-btn-quant-price">
+                            <div class="choose-macaroon-quant-price">
+                                <div class="choose-macaroon-quantity">1 шт.</div>
+                                <div class="choose-macaroon-price">1,70 руб.</div>
+                            </div>
+                            <button class="macaroons-action btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="choose-macaroon-cart">
+                        <div class="choose-macaroon-cart-image">
+                            <img src="images/3.png" alt="Macaroon 3">
+                        </div>
+                        <div class="choose-macaroon-title">Пирог с ванилью</div>
+                        <div class="choose-macaroon-btn-quant-price">
+                            <div class="choose-macaroon-quant-price">
+                                <div class="choose-macaroon-quantity">1 шт.</div>
+                                <div class="choose-macaroon-price">1,70 руб.</div>
+                            </div>
+                            <button class="macaroons-action btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="choose-macaroon-cart">
+                        <div class="choose-macaroon-cart-image">
+                            <img src="images/4.png" alt="Macaroon 4">
+                        </div>
+                        <div class="choose-macaroon-title">Пирог с фисташками</div>
+                        <div class="choose-macaroon-btn-quant-price">
+                            <div class="choose-macaroon-quant-price">
+                                <div class="choose-macaroon-quantity">1 шт.</div>
+                                <div class="choose-macaroon-price">1,70 руб.</div>
+                            </div>
+                            <button class="macaroons-action btn">Заказать</button>
+                        </div>
+                    </div>
+                </div> -->
+        <div class="choose-macaroon-carts">
+          <app-product-card
+            *ngFor="let product of products"
+            [product]="product"
+            (addedToCart)="onProductAdded($event)"
+          >
+          </app-product-card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order-macaroons" class="order-macaroons">
+    <div class="container">
+      <div class="order-macaroon">
+        <div class="order-macaroon-left">
+          <img
+            class="four-macaroon"
+            src="images/four_macarons.png"
+            alt="four macaroons"
+          />
+          <div class="order-macaroons-left-strawberry">
+            <img
+              class="box bounce-1"
+              src="images/strawberry.png"
+              alt="strawberry"
+            />
+          </div>
+        </div>
+        <div class="order-macaroon-right">
+          <h2 class="order-macaroons-title">Закажите макарун!</h2>
+          <p class="order-macaroons-description">
+            Выберите понравившийся макарун, заполните форму и ожидайте звонка
+            нашего пекаря!
+          </p>
+          <form class="order-macaroon-form">
+            <label>Ваш выбор</label>
+            <input type="text" placeholder="Напишите, что хотите заказать..." />
+            <label>Заполните данные для заказа</label>
+            <input type="text" placeholder="Ваше имя" />
+            <!-- <input type="text" placeholder="+375 (__) ___ - __ - __" /> -->
+            <input
+            type="text"
+            name="userPhone"
+            appPhoneInput
+            [(ngModel)]="userPhone"
+            placeholder="+375 (__) ___ __ __"
+          >
+            <button class="macaroons-action order-btn">Оформить заказ</button>
+          </form>
+          <div class="order-macaroons-left-strawberry-mini">
+            <img
+              class="box2 bounce-2"
+              src="images/strawberry-mini.png"
+              alt="strawberry-mini"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-flex">
+      <div class="footer-logo">
+        <div class="footer-logo-img">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+        <div class="footer-logo-desc">
+          <p>Все права защищены, 2020</p>
+        </div>
+      </div>
+      <div class="instagram">
+        <a href="#" class="insta">
+          <img src="images/instagram.png" alt="instagram" />
+          <p>Мы в Instagram</p>
+        </a>
+      </div>
+      <div class="footer-phone">{{ phoneNumber | phone }}</div>
+    </div>
+  </div>
+
+  <div class="floating-cart" (click)="toggleCart()">
+    <img src="images/cart.png" alt="Корзина" />
+    <span class="cart-badge">{{ cartService.getTotalCount() }}</span>
+    <div class="cart-tooltip">
+      {{ cartService.getTotalSum().toFixed(2) }} руб.
+    </div>
+  </div>
+</footer>
+
+<footer class="footer-adaptive">
+  <div class="container">
+    <div class="footer-flex-adaptive">
+      <div class="footer-logo-adaptive">
+        <div class="footer-logo-img-adaptive">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="footer-logo-desc-adaptive">
+        <p>Все права защищены, 2020</p>
+      </div>
+
+      <div class="instagram-adaptive">
+        <a href="#" class="insta-adaptive">
+          <img src="images/instagram.png" alt="instagram" />
+          <p>Мы в Instagram</p>
+        </a>
+      </div>
+      <div class="footer-phone-adaptive">{{ phoneNumber | phone }}</div>
+    </div>
+  </div>
+
+  <div class="tooltip">
+    <img src="images/present.png" alt="present" />
+    <span class="tooltiptext">
+      <p>Оформите заказ</p>
+      <p>и получите подарок!</p>
+    </span>
+  </div>
+</footer>

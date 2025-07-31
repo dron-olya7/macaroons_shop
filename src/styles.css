@@ -1,0 +1,1444 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: Tavolga;
+    src: url("../public/fonts/Tavolga-Free/tavolga_free.ttf")
+}
+
+@font-face {
+    font-family: GilroyRegular;
+    src: url("../public/fonts/Gilroy/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: GilroyMedium;
+    src: url("../public/fonts/Gilroy/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url("../public/fonts/Gilroy/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: GilroyExtraBold;
+    src: url("../public/fonts/Gilroy/Gilroy-Extrabold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Tavolga Free', sans-serif;
+}
+
+/*начало header*/
+
+.header{
+    background-color: #eba8b1;
+    padding: 38px 0 29px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header .container{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-right: 232px;
+}
+
+.menu {
+    margin-right: 329px;
+}
+
+.menu ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 324px;
+}
+
+.menu ul li {
+    list-style: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu ul li:hover{
+    border-bottom: 2px solid #821328;
+    transition: all 1s;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "GilroyMedium", sans-serif;
+    color: rgb(255 255 255);
+    font-weight: 600;
+}
+
+.header-phone{
+    font-size: 16px;
+    font-family: "GilroyBold", sans-serif;
+    color: rgb(255, 255, 255);
+}
+/*конец header*/
+
+/*начало main-macaroons*/
+.main{
+    overflow: hidden;
+}
+
+.main-macaroons{
+    background-color: #eba8b1;
+    padding: 200px 0 108px 0;
+}
+
+.main-macaroons .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-macaroons-left{
+    position: relative;
+    z-index: 1;
+}
+
+.main-macaroons-title{
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    margin-bottom: 60px;
+    margin-top: 17px;
+}
+
+.main-macaroons-description {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.389;
+    max-width: 345px;
+    margin-bottom: 80px;
+}
+
+.macaroons-action {
+    background-image: linear-gradient(360deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    width: 240px;
+    padding: 22px 43px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: "GilroyBold", sans-serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.macaroons-action:hover{
+    box-shadow: 0 5px 9px 1px rgba(130, 19, 40, 0.5);
+    transition: all 0.5s;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-macaroons-right{
+    position: relative;
+}
+
+.image::before,
+.image::after{
+    width: 500px;
+    height: 500px;
+    content: '';
+    position: absolute;
+    border: 1px solid  rgb(113,8,30);
+    border-radius: 50%;
+    animation: pulse 1.8s linear infinite;
+}
+
+.image::after{
+    animation-delay: .5s;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.2);
+        opacity: 2;
+    }
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.2);
+        opacity: 2;
+    }
+}
+/*конец main-macaroons*/
+
+/*начало big-macaroons*/
+.big-macaroons{
+    background-color: #ffefef;
+    padding-top: 119px;
+}
+
+.big-macaroons .container{
+    display: grid;
+}
+
+.big-macaroons-top{
+
+    margin-bottom: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.big-macaroons-left-title {
+    font-size: 45px;
+    color: rgb(51, 25, 7);
+    line-height: 1.222;
+    padding-right: 151px;
+    margin-bottom: 60px;
+}
+
+.big-macaroons-left-desc {
+    font-size: 18px;
+    font-family: "GilroyRegular", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.5;
+    padding-right: 242px;
+}
+
+.big-macaroons-right{
+    padding-bottom: 5px;
+}
+
+.big-macaroons-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.big-macaroon-bottom{
+    max-width: 220px;
+}
+
+.big-macaroon-bottom:hover .big-macaroon-bottom-number{
+    background-color: rgb(235, 168, 177);
+    color: rgb(130, 19, 40);
+}
+
+.big-macaroon-bottom-number {
+    border-radius: 50%;
+    background-color: rgb(130, 19, 40);
+    width: 70px;
+    height: 70px;
+    font-size: 60px;
+    font-family: "GilroyExtraBold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.75;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 13px;
+}
+
+.big-macaroon-bottom-title{
+    font-size: 20px;
+    font-family: "GilroyExtraBold", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 2.25;
+}
+
+.big-macaroon-bottom-description {
+    font-size: 15px;
+    font-family: "GilroyMedium", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.333;
+}
+/*конец big-macaroons*/
+
+/*начало choose-macaroons*/
+.choose-macaroons{
+    background-color: #eba8b1;
+}
+
+.choose-macaroons .container{
+    padding: 120px 0;
+}
+
+.choose-macaroons-title{
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    line-height: 1.222;
+    text-align: center;
+    margin-bottom: 143px;
+}
+
+.choose-macaroon-carts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.choose-macaroon-cart {
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 20px;
+    position: relative;
+    width: 263px;
+}
+
+.choose-macaroon-cart-image {
+    position: absolute;
+    top: -58px;
+    margin: 0 36px 0 35px;
+}
+
+.choose-macaroon-cart .choose-macaroon-cart-image img{
+    transition: 1s;
+}
+
+.choose-macaroon-cart:hover .choose-macaroon-cart-image img{
+    transform: scale(1.2);
+}
+
+.choose-macaroon-title {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 3.056;
+    text-align: center;
+    padding: 109px 0 26px 0;
+}
+
+.choose-macaroon-btn-quant-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 21px 27px 20px;
+}
+
+.choose-macaroon-quant-price{
+    font-size: 15px;
+    font-family: "GilroyRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+}
+
+.choose-macaroon-quantity{
+    margin-bottom: 16px;
+}
+
+.macaroons-action.btn{
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*конец choose-macaroons*/
+
+/*начало order-macaroons*/
+.order-macaroons {
+    background-color: #ffefef;
+}
+
+.order-macaroon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 98px 0 120px 0;
+}
+
+.order-macaroon-left{
+    position: relative;
+    right: 20px;
+}
+
+.four-macaroon{
+    margin-left: 30px;
+}
+
+.order-macaroons-left-strawberry img{
+    position: absolute;
+    top: -23px;
+    left: 0;
+}
+
+.order-macaroon-right{
+    position: relative;
+}
+
+.order-macaroons-title{
+    font-size: 45px;
+    color: rgb(51, 25, 7);
+    line-height: 1;
+    width: 420px;
+    margin-bottom: 41px;
+}
+
+.order-macaroons-description{
+    font-size: 18px;
+    font-family: "GilroyRegular", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.556;
+    text-align: left;
+    margin-bottom: 48px;
+    max-width: 404px;
+}
+
+.order-macaroon-form {
+    font-size: 18px;
+    font-family: "GilroyBold", sans-serif;
+    color: rgb(18, 10, 6);
+    display: flex;
+    flex-direction: column;
+}
+
+.order-macaroon-form label:nth-of-type(1){
+    margin-bottom: 20px;
+}
+
+.order-macaroon-form label:nth-of-type(2){
+    margin-bottom: 22px;
+    margin-top: 25px;
+}
+
+.order-macaroon-form input{
+    border-width: 1px;
+    border-color: rgb(130, 19, 40);
+    border-style: solid;
+    border-radius: 30px;
+    width: 293px;
+    height: 58px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    color: rgb(118, 12, 34);
+    font-family: "GilroyBold", sans-serif;
+    font-size: 15px;
+}
+.order-macaroon-form input::placeholder{
+    font-size: 15px;
+    font-family: "GilroyBold", sans-serif;
+    color: rgb(118, 12, 34);
+}
+
+.order-macaroon-form input:focus {
+  outline: none;
+  border-color: #821328; /* Цвет как у вашего дизайна */
+  box-shadow: 0 0 0 2px rgba(130, 19, 40, 0.2); /* Необязательно: мягкая тень */
+}
+
+.macaroons-action.order-btn{
+    width: 295px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-macaroons-left-strawberry-mini{
+    position: absolute;
+    top: 448px;
+    right: 0;
+}
+
+.order-macaroons-left-strawberry{
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.box {
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+
+.order-macaroons-left-strawberry-mini{
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.box2 {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: linear;
+}
+@keyframes bounce-2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+/*конец order-macaroons*/
+
+/*начало footer*/
+.footer{
+    background-color: #c0707c;
+}
+
+.footer-flex{
+    padding: 73px 0 62px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    margin-bottom: 15px;
+    margin-top: 7px;
+}
+
+.footer-logo p{
+    font-size: 12px;
+    font-family: "GilroyRegular", sans-serif;
+    color: rgb(227, 172, 180);
+}
+
+.instagram{
+    text-align: center;
+}
+
+.insta img{
+    margin-bottom: 15px;
+}
+
+.insta{
+    text-decoration: none;
+}
+
+.insta p{
+    font-size: 16px;
+    font-family: "GilroyBold", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.footer-phone{
+     font-size: 16px;
+     font-family: "GilroyBold", sans-serif;
+     color: rgb(255, 255, 255);
+ }
+
+/*конец footer*/
+
+.burger{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+.on-block{
+    position: relative;
+}
+
+.tooltip {
+    border-bottom: 1px dotted black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(20% 20% at 50% 50%, #46000e 50%, #bc394e 200%);
+    z-index: 2;
+}
+
+.tooltip:hover{
+    box-shadow: 0 0 12.6px 2.4px rgba(130, 19, 40, 0.5);
+}
+
+.tooltip .tooltiptext {
+    transform: scale(0);
+    border: 2px solid #770a1d;
+    width: 172px;
+    background-color: #feefee;
+    font-family: "GilroyMedium", sans-serif;
+    color: #770a1d;
+    line-height: 1.333;
+    border-radius: 10px;
+    position: absolute;
+    padding: 15px 12px 14px 11px;
+    top: 15px;
+    right: 121px;
+    transform: translateY(200%);
+    transition: all 0.5s;
+}
+
+.tooltip .tooltiptext::before {
+    content: '';
+    border-top: 15px solid transparent;
+    border-left: 15px solid #770a1d;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    right: -16px;
+    top: 20px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 99%;
+    margin-top: -5px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #feefee;
+}
+
+.tooltip:hover .tooltiptext {
+    transform: translateY(0);
+}
+
+.floating-cart {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(20% 20% at 50% 50%, #46000e 50%, #bc394e 200%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.floating-cart:hover {
+  box-shadow: 0 0 12.6px 2.4px rgba(130, 19, 40, 0.5);
+}
+
+.floating-cart img{
+  width: 50%;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  background: #fff;
+  color: #821328;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid #821328;
+}
+
+.cart-tooltip {
+  position: absolute;
+  right: 121px;
+  top: 15px;
+  background: #feefee;
+  border: 2px solid #770a1d;
+  border-radius: 10px;
+  padding: 18px;
+  width: 90px;
+  transform: translateY(200%);
+  transition: all 0.5s;
+  opacity: 0;
+  color: #770a1d;
+  font-family: "GilroyMedium", sans-serif;
+}
+
+.floating-cart:hover .cart-tooltip {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cart-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 99%;
+  margin-top: -5px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent #feefee;
+}
+
+.cart-tooltip::before {
+    content: "";
+    position: absolute;
+    top: 39%;
+    left: 100%;
+    margin-top: -8px;
+    border-width: 16px;
+    border-style: solid;
+    border-color: transparent transparent transparent #770a1d;
+}
+
+.footer-adaptive{
+    display: none;
+}
+
+@media screen and (max-width: 2560px) {
+    .present{
+        position: fixed;
+        right: 200px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .present{
+        position: fixed;
+        right: 100px;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+    .menu{
+        margin: 0;
+    }
+
+    .choose-macaroons-title{
+        margin-bottom: 103px;
+    }
+
+    .choose-macaroon-carts{
+        justify-content: space-around;
+    }
+
+    .choose-macaroon-cart{
+        margin: 40px 0;
+    }
+
+    .footer-flex{
+        justify-content: space-around;
+    }
+
+}
+/*768 - 1023 */
+@media screen and (max-width: 1023px) {
+    .header-phone{
+        display: none;
+    }
+
+    .logo{
+        margin-right: 103px;
+    }
+
+    .main-macaroons{
+        padding-top: 73px;
+        padding-bottom: 62px;
+    }
+
+    .main-macaroons .container{
+        flex-direction: column;
+    }
+
+    .main-macaroons-title{
+        margin-bottom: 74px;
+    }
+
+    .main-macaroons-description{
+        margin-bottom: 41px;
+    }
+
+    .main-macaroons-right{
+        margin-top: -85px;
+        margin-left: 160px;
+    }
+
+    .big-macaroons{
+        padding: 0;
+    }
+
+    .big-macaroons-top{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 48px;
+        padding-top: 119px;
+    }
+
+    .big-macaroons-left-title{
+        font-size: 45px;
+        line-height: 1.222;
+        text-align: center;
+        padding: 0 131px;
+        margin-bottom: 61px;
+    }
+
+
+    .big-macaroons-left-desc{
+        font-size: 18px;
+        line-height: 1.556;
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0 36px;
+    }
+
+    .big-macaroons-right img {
+        width: 302px;
+    }
+
+    .big-macaroons-bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 80px;
+    }
+
+    .big-macaroon-bottom{
+        margin: 40px 27px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .big-macaroon-bottom-description{
+        text-align: center;
+    }
+
+    .choose-macaroons .container{
+        padding-bottom: 52px;
+    }
+
+    .choose-macaroons-title{
+        margin-bottom: 75px;
+    }
+
+    .choose-macaroon-carts{
+        justify-content: center;
+    }
+
+    .choose-macaroon-cart{
+        margin: 68px 15px;
+    }
+
+    .order-macaroons{
+        padding: 120px 0;
+    }
+
+    .order-macaroon{
+        padding: 0;
+        align-items: flex-end;
+    }
+
+    .order-macaroon-left{
+        order: 2;
+        position: relative;
+        top: 100px;
+    }
+
+    .order-macaroons-left-strawberry img{
+        position: absolute;
+        top: -23px;
+        left: -20px;
+    }
+
+    .four-macaroon{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .order-macaroons-left-strawberry-mini img{
+        position: absolute;
+        top: -302px;
+        left: 280px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header .container{
+        justify-content: space-between;
+    }
+
+    .logo{
+        order: 1;
+    }
+
+    .burger{
+        order: 2;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .main-macaroons{
+        padding-top: 63px;
+        padding-bottom: 43px;
+    }
+
+    .main-macaroons-title{
+        font-size: 32px;
+        line-height: 1.25;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .main-macaroons-description {
+        font-size: 16px;
+        line-height: 1.438;
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 800px;
+    }
+
+    .btn-macaroons-action{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 38px;
+    }
+
+    .main-macaroons-right {
+        margin: 0;
+        text-align: center;
+    }
+
+    .image::before,
+    .image::after{
+        width: 350px;
+        height: 350px;
+    }
+
+    .main-macaroons-right img{
+        width: 250px;
+    }
+
+    .big-macaroons-top{
+        flex-direction: column;
+        padding-top: 100px;
+        margin-bottom: 42px;
+    }
+
+    .big-macaroons-left-title{
+        padding: 0;
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 1.167;
+        text-align: center;
+    }
+
+    .big-macaroons-left-desc{
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.437;
+        text-align: center;
+        margin-bottom: 59px;
+    }
+
+    .big-macaroons-right{
+        text-align: center;
+    }
+
+    .big-macaroons-right img{
+        width: 302px;
+    }
+
+    .big-macaroons-bottom{
+        padding-bottom: 82px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-macaroon-bottom{
+        max-width: 165px;
+        margin: 0 3px;
+        padding: 18px 0;
+    }
+
+    .big-macaroon-bottom-title {
+        font-size: 18px;
+        line-height: 2.496;
+        text-align: center;
+    }
+
+    .big-macaroon-bottom-description {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .choose-macaroons .container{
+        padding-top: 100px;
+        padding-bottom: 29px;
+    }
+
+    .choose-macaroon-carts{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choose-macaroons-title {
+        font-size: 30px;
+        margin-bottom: 51px;
+    }
+
+    .choose-macaroon-cart{
+        margin: 71px 0;
+    }
+
+    .order-macaroon-left{
+        margin: 0;
+    }
+
+    .four-macaroon{
+        display: none;
+    }
+
+    .order-macaroons{
+        padding-top: 100px;
+        padding-bottom: 77px;
+    }
+
+    .order-macaroon-right{
+        margin: 0;
+    }
+
+    .order-macaroons-title {
+        font-size: 30px;
+        line-height: 1.167;
+        margin-bottom: 44px;
+    }
+
+    .order-macaroons-description {
+        font-size: 16px;
+        line-height: 1.437;
+        margin-bottom: 60px;
+    }
+
+    .order-macaroons-left-strawberry{
+        position: absolute;
+        top: -445px;
+        left: -59px;
+    }
+
+    .order-macaroon-form input{
+        width: 100%;
+    }
+
+    .macaroons-action.order-btn{
+        width: 100%;
+    }
+
+    .order-macaroons-left-strawberry-mini img{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .footer-adaptive{
+        display: block;
+        background-color: #c0707c;
+    }
+
+    .footer-flex-adaptive{
+        padding: 47px 0 52px 0;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .footer-logo-img-adaptive{
+        text-align: center;
+    }
+
+    .footer-logo-img-adaptive img {
+        margin-bottom: 40px;
+        order: 1;
+    }
+
+    .footer-logo-desc-adaptive{
+        font-size: 12px;
+        font-family: "GilroyRegular", sans-serif;
+        color: rgb(227, 172, 180);
+        text-align: center;
+        order: 4;
+    }
+
+    .instagram-adaptive{
+        text-align: center;
+        order: 3;
+        margin-bottom: 40px;
+    }
+
+    .insta-adaptive img{
+        margin-bottom: 15px;
+    }
+
+    .insta-adaptive{
+        text-decoration: none;
+    }
+
+    .insta-adaptive p{
+        font-size: 16px;
+        font-family: "GilroyBold", sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .footer-phone-adaptive{
+        font-size: 16px;
+        font-family: "GilroyBold", sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        order: 2;
+        margin-bottom: 40px;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: #000000c9;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .menu ul li{
+        margin: 15px 0;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .menu.open{
+        display: flex;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .menu .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: rgb(164, 107, 0);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+
+/*375 - 425*/
+@media screen and (max-width: 425px) {
+
+    .header .container{
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin: 0;
+        order: 1;
+    }
+
+    .burger{
+        order: 2;
+    }
+
+    .main-macaroons{
+        padding-top: 63px;
+        padding-bottom: 43px;
+    }
+
+    .main-macaroons-title{
+        font-size: 32px;
+        line-height: 1.25;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .main-macaroons-description {
+        font-size: 16px;
+        line-height: 1.438;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .btn-macaroons-action{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 38px;
+    }
+
+    .main-macaroons-right {
+        margin: 0;
+        text-align: center;
+    }
+
+    .image::before,
+    .image::after{
+        width: 350px;
+        height: 350px;
+    }
+
+    .main-macaroons-right img{
+        width: 250px;
+    }
+
+    .big-macaroons-top{
+        flex-direction: column;
+        padding-top: 100px;
+        margin-bottom: 42px;
+    }
+
+    .big-macaroons-left-title{
+        padding: 0;
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 1.167;
+        text-align: center;
+    }
+
+    .big-macaroons-left-desc{
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.437;
+        text-align: center;
+        margin-bottom: 59px;
+    }
+
+    .big-macaroons-right{
+        text-align: center;
+    }
+
+    .big-macaroons-right img{
+        width: 302px;
+    }
+
+    .big-macaroons-bottom{
+        padding-bottom: 82px;
+    }
+
+    .big-macaroon-bottom{
+        max-width: 165px;
+        margin: 0 3px;
+        padding: 18px 0;
+    }
+
+    .big-macaroon-bottom-title {
+        font-size: 18px;
+        line-height: 2.496;
+        text-align: center;
+    }
+
+    .big-macaroon-bottom-description {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .choose-macaroons .container{
+        padding-top: 100px;
+        padding-bottom: 29px;
+    }
+
+    .choose-macaroon-carts{
+        justify-content: center;
+    }
+
+    .choose-macaroons-title {
+        font-size: 30px;
+        margin-bottom: 51px;
+    }
+
+    .choose-macaroon-cart{
+        margin: 71px 0;
+    }
+
+    .order-macaroon-left{
+        margin: 0;
+    }
+
+    .four-macaroon{
+        display: none;
+    }
+
+    .order-macaroons{
+        padding-top: 100px;
+        padding-bottom: 77px;
+    }
+
+    .order-macaroon{
+        justify-content: flex-start;
+    }
+
+    .order-macaroon-right{
+        margin: 0;
+    }
+
+    .order-macaroons-title {
+        font-size: 30px;
+        line-height: 1.167;
+        margin-bottom: 44px;
+    }
+
+    .order-macaroons-description {
+        font-size: 16px;
+        line-height: 1.437;
+        margin-bottom: 60px;
+    }
+
+    .order-macaroons-left-strawberry{
+        position: absolute;
+        top: -445px;
+        left: -59px;
+    }
+
+    .order-macaroon-form input{
+        width: 75%;
+    }
+
+    .macaroons-action.order-btn{
+        width: 75%;
+    }
+
+    .order-macaroons-left-strawberry-mini img{
+        display: none;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: #000000c9;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .menu ul li{
+        margin: 15px 0;
+    }
+
+    .menu.open{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: rgb(164, 107, 0);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+
+    .order-macaroon-form input{
+        width: 65%;
+    }
+
+    .macaroons-action.order-btn{
+        width: 65%;
+    }
+
+    .order-macaroons-left-strawberry img {
+        position: absolute;
+        top: -23px;
+        left: -67px;
+    }
+
+    .tooltip{
+        width: 90px;
+        height: 90px;
+    }
+
+    .tooltip .tooltiptext{
+        font-size: 12px;
+        position: absolute;
+        width: 125px;
+        right: 108px;
+    }
+
+    .tooltip .tooltiptext::before {
+        border-top: 17px solid transparent;
+        border-left: 17px solid #770a1d;
+        border-bottom: 17px solid transparent;
+        position: absolute;
+        right: -17px;
+        top: 14px;
+    }
+}
+
+
+
+

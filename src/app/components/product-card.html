@@ -1,0 +1,13 @@
+<div class="choose-macaroon-cart">
+  <div class="choose-macaroon-cart-image">
+    <img [src]="product.image" [alt]="product.name">
+  </div>
+  <div class="choose-macaroon-title">{{ product.name }}</div>
+  <div class="choose-macaroon-btn-quant-price">
+    <div class="choose-macaroon-quant-price">
+      <div class="choose-macaroon-quantity">1 шт.</div>
+      <div class="choose-macaroon-price">{{ product.price | currency:'':'':'1.2-2' }} руб.</div>
+    </div>
+    <button class="macaroons-action btn" (click)="addToCart()">Заказать</button>
+  </div>
+</div>
