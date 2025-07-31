@@ -1,4 +1,5 @@
 # MacaroonsShop
+<img width="1897" height="915" alt="1" src="https://github.com/user-attachments/assets/bfe5853d-2ca6-4d68-80cd-8cabbba11ab4" />
 
 ## This project has been converted to angular
 
