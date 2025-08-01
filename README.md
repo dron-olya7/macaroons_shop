@@ -1,9 +1,6 @@
 # MacaroonsShop
-<img width="1897" height="915" alt="1" src="https://github.com/user-attachments/assets/bfe5853d-2ca6-4d68-80cd-8cabbba11ab4" />
 
-## This project has been converted to angular
-
-This project was generated using Angular CLI version 20.1.1.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.1.
 
 ## Development server
 

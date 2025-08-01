@@ -1,6 +1,6 @@
 import { Component, signal, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // Добавьте этот импорт
+import { FormsModule } from '@angular/forms';
 import { CartService } from './services/cart.service';
 import { PhonePipe } from './pipes/phone.pipe';
 import { ProductsService } from './services/products.service';
@@ -8,19 +8,22 @@ import { AdvantagesComponent } from './components/advantages.component';
 import { ProductCard } from './components/product-card';
 import { TruncatePipe } from './pipes/truncate-pipe';
 import { Product } from './interfaces/product.interface';
-import { PhoneInputDirective } from './directives/phone-input.directive'; // Добавьте этот импорт, если используете директиву
+import { PhoneInputDirective } from './directives/phone-input.directive';
+import { Button } from './directives/button';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule, // Добавьте FormsModule сюда
+    FormsModule,
     PhonePipe,
     AdvantagesComponent,
     ProductCard,
     TruncatePipe,
-    PhoneInputDirective // Добавьте директиву, если используете
+    PhoneInputDirective,
+    Button
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

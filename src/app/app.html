@@ -69,9 +69,7 @@
           Побалуйте себя и своих близких самыми вкусными и ароматными домашними
           пироженками Macaroon!
         </p>
-        <div class="btn-macaroons-action">
-          <a class="macaroons-action" appButton href="#choose-macaroons">Выбрать макарун</a>
-        </div>
+          <button class="macaroons-action" (click)="scrollTo('choose-macaroons')" appButton>Выбрать макарун</button>
       </div>
       <div class="main-macaroons-right">
         <div class="image">
@@ -83,7 +81,7 @@
 
   <section id="big-macaroons" class="big-macaroons">
     <div class="container">
-      <div class="big-macaroons-top">
+      <!-- <div class="big-macaroons-top">
         <div class="big-macaroons-left">
           <h2 class="big-macaroons-left-title">
             Мы печём для вас вкуснейшие макаруны уже более 10 лет
@@ -132,7 +130,8 @@
             о соответствии, которую мы получили 22.06.2016 г.
           </div>
         </div>
-      </div>
+      </div> -->
+     <app-advantages></app-advantages>
     </div>
 
     <div id="choose-macaroons" class="choose-macaroons" #chooseMacaroons>
@@ -240,7 +239,7 @@
             [(ngModel)]="userPhone"
             placeholder="+375 (__) ___ __ __"
           >
-            <button class="macaroons-action order-btn">Оформить заказ</button>
+            <button class="macaroons-action order-btn" appButton>Оформить заказ</button>
           </form>
           <div class="order-macaroons-left-strawberry-mini">
             <img

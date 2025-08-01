@@ -8,6 +8,6 @@
       <div class="choose-macaroon-quantity">1 шт.</div>
       <div class="choose-macaroon-price">{{ product.price | currency:'':'':'1.2-2' }} руб.</div>
     </div>
-    <button class="macaroons-action btn" (click)="addToCart()">Заказать</button>
+    <button class="macaroons-action btn" appButton (click)="addToCart()">Заказать</button>
   </div>
 </div>
