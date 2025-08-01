@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ProductCard } from './product-card';
-import { CartService } from '../../services/cart.service';
+import { CartService } from '../services/cart.service';
 import { CurrencyPipe } from '@angular/common';
 
 describe('ProductCard', () => {
